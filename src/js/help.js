@@ -86,3 +86,6 @@ popupItems.forEach(item => {
     searchDropdown.classList.remove('dropdown-show');
   })
 })
+// при нажатии на поиск появляется рамка
+form.addEventListener("focusin", () => form.classList.add('focused'));
+form.addEventListener("focusout", () => form.classList.remove('focused'));
